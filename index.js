@@ -34,6 +34,13 @@ searchButton.addEventListener("click", (e) => {
     searchterm = searchbar.search.value;
     results.innerHTML = "No results found for \"" + searchterm + "\". Please refine your search.";
 })
+searchbar.addEventListener('submit', event => {
+    // submit event detected
+    event.preventDefault()
+    console.log("search submitted");
+    searchterm = searchbar.search.value;
+    results.innerHTML = "No results found for \"" + searchterm + "\". Please refine your search.";
+  })
 
 function checkLoggedIn (){
     if(loggedIn){
