@@ -1,8 +1,10 @@
 var loggedIn = false;
+var loginAttempts = 0;
 
 const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
+const forgottenpassword = document.getElementById("forgot-password");
 
 const searchbar = document.getElementById("search-bar");
 const searchButton = document.getElementById("search-submit");
@@ -20,13 +22,17 @@ loginButton.addEventListener("click", (e) => {
         loggedIn = true;
     } else {
         loginErrorMsg.style.opacity = 1;
+        loginAttempts++;
+        if(loginAttempts > 2){
+            forgottenpassword.style.opacity = 1;
+        }
     }
 })
 
 searchButton.addEventListener("click", (e) => {
     console.log("search button pressed");
     searchterm = searchbar.search.value;
-    results.innerHTML = "No results found for " + searchterm + ". Please refine your search.";
+    results.innerHTML = "No results found for \"" + searchterm + "\". Please refine your search.";
 })
 
 function checkLoggedIn (){
