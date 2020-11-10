@@ -21,9 +21,6 @@
         <div id="id01" class="modal" style="display: block">
   
             <form class="modal-content animate" id="login-form" method="post">
-              <div class="imgcontainer">
-                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-              </div>
           
               <div class="container">
                 <label for="username"><b>Username</b></label>
@@ -39,50 +36,17 @@
           </div>
         <div class="container-fluid">
             <div class="inner-content">
-
-                <div class='column left blur'>
-                    <h3>Welcome Home to the Tillinghast Institute Database!</h3>
-                    <p>
-                        Contrary to popular belief, Lorem Ipsum is not simply random text.
-                        It has roots in a piece of classical Latin literature from 45 BC, making it over 
-                        2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,
-                        looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
-                        and going through the cites of the word in classical literature, discovered the
-                        undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
-                        Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book
-                        is a treatise on the theory of ethics, very popular during the Renaissance. The first line
-                        of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The
-                        standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-                        Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced
-                        in their exact original form, accompanied by English versions from the 1914 translation
-                        by H. Rackham. </p>
-                </div>
-                <div class='column right'>
-                    <h2 class="blur">New Arrivals</h2>
-                    <p class="blur">Check out (literally!) the latest books to arrive in Roguelike Library</p>
-                    <p class="special"><span class="blur">
-                        Contrary to popular belief, Lorem Ipsum is not simply random text.
-                        It has roots in a piece of classical Latin literature from 45 BC, making it over 
-                        2000 years old. </span><span class="clear" onclick="append('Cassidy')">Cassidy</span><span class="blur"> McClintock, a Latin professor at Hampden-Sydney College in Virginia,
-                        looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
-                        and going through the cites of the word in classical literature, discovered </span><span class="clear" onclick="append('that')">that</span><span class="blur">
-                        undoubtable source. Lorem Ipsum comes </span><span class="clear" onclick="append('why')">why</span><span class="blur"> from sections 1.10.32 and 1.10.33 of "de Finibus
-                        Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book
-                        </span><span class="clear" onclick="append('is')">is</span><span class="blur"> a treatise on the theory of ethics, very popular during the Renaissance. The first line
-                        of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The
-                        standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-                        Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero </span><span class="clear" onclick="append('are')">are</span><span class="blur"> also reproduced
-                        in their exact original form, accompanied by English versions from the 1914 translation
-                        by H. Rackham. If </span><span class="clear" onclick="append('you')">you</span><span class="blur"> are interested, find out more in our Latin collections.
-                    </span>
-                    </p>
-                </br>
-                    <p class="prompt">I'm here...</p>
-                </br>
-                    <p class="input special"></p>
-                </div>
+            </br>
+            </br>
+            <div class="search-container">
+                <form id="search-bar" action="#" method="post">
+                  <input type="text" placeholder="Search.." name="search">
+                  <button type="button" id="search-submit">submit</button>
+                </form>
             </div>
+            <p id="search-results"></p>
         </div>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
         <script src="index.js"></script>
     </body>
