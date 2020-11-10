@@ -15,7 +15,7 @@ loginButton.addEventListener("click", (e) => {
     const password = loginForm.password.value;
 
     if (username === "thatgirlcharliexx@gmail.com" && password === "pineapple") {
-        alert("You have successfully logged in.");
+        // alert("You have successfully logged in.");
         document.getElementById('id01').style.display='none';
         loggedIn = true;
     } else {
