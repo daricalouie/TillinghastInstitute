@@ -33,8 +33,9 @@ loginButton.addEventListener("click", (e) => {
 function searchHandler(){
     searchterm = searchbar.search.value;
     results.innerHTML = "No results found for \"" + searchterm + "\". Please refine your search.";
-    resultsWindow.style.maxHeight = resultsWindow.scrollHeight +"px";
     resultsWindow.style.padding = "20px 18px" ;    
+    resultsWindow.style.maxHeight = resultsWindow.scrollHeight + 40 +"px";
+    
     
 }
 
