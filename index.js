@@ -14,6 +14,9 @@ var animation = anime.timeline({loop: true,
         console.log("loop completed");
         if (finished) {
             anim.pause();
+            for(el of blurWrappers){
+                el.style.filter = 'blur(0)';
+            }
         }
     }})
 .add({
@@ -36,7 +39,14 @@ var animation = anime.timeline({loop: true,
     }
 });
 
-var cassAnim = anime.timeline({loop: true})
+var cassAnim = anime.timeline({loop: true, 
+    loopComplete:function(anim){
+        if (finished) {
+            anim.pause();
+            cassText.style.opacity = 1;
+        }
+    }
+})
   .add({
     targets: '.letter',
     opacity: [0,1],
@@ -50,6 +60,7 @@ var cassAnim = anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 3000
   });
+
 
 function append(s){
     if(!currString.includes(s)){
