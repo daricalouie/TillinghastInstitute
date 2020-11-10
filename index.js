@@ -9,6 +9,23 @@ var cassText = document.querySelector('.prompt');
 cassText.innerHTML = cassText.innerHTML.replace(/\S/g, "<span class='letter'>$&</span>");
 
 
+const loginForm = document.getElementById("login-form");
+const loginButton = document.getElementById("login-form-submit");
+const loginErrorMsg = document.getElementById("login-error-msg");
+
+loginButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    const username = loginForm.username.value;
+    const password = loginForm.password.value;
+
+    if (username === "thatgirlcharliexx@gmail.com" && password === "pineapple") {
+        alert("You have successfully logged in.");
+        document.getElementById('id01').style.display='none';
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
+})
+
 var animation = anime.timeline({loop: true, 
     loopComplete: function(anim){
         console.log("loop completed");
