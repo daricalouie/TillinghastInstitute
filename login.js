@@ -52,5 +52,8 @@ function checkLoggedIn() {
     if (username == "bruce") {
         document.getElementById('id01').style.display = 'none';
     }
+    else{
+        document.getElementById('id01').style.display = 'block';
+    }
 }
  window.onload = checkLoggedIn;
