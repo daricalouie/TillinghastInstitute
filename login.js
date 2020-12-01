@@ -47,7 +47,10 @@ function getCookie(cname) {
 
 function checkLoggedIn() {
     var username = getCookie("username");
+    console.log("checking cookie");
+    console.log(username);
     if (username == "bruce") {
         document.getElementById('id01').style.display = 'none';
     }
 }
+ window.onload = checkLoggedIn;
