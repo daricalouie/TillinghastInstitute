@@ -4,6 +4,7 @@
 <head>
     <!-- head definitions go here -->
     <meta charset='utf-8'>
+    <title>Tillinghast Organization</title>
     <link rel='stylesheet' , href='style.css'>
 
 </head>
@@ -19,6 +20,21 @@
             <span></span>
         </div>
     </div>
+    <div id="id01" class="modal" style="display: block">
+        <form class="modal-content animate" id="login-form" method="post">
+            <div class="container">
+                <label for="username"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="username" required>
+
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required>
+
+                <button type="submit" id="login-form-submit">Login</button>
+                <p id="login-error-msg">Invalid username and/or password</p>
+                <p id="forgot-password">If you have forgotten your password, please contact the IT department.</p>
+            </div>
+        </form>
+    </div>
     <div class="search-container">
         <h1>Search the Tillinghast Database</h1>
         <form id="search-bar" method="post">
@@ -30,6 +46,15 @@
         <div id="results-window">
             <p id="search-results"></p>
         </div>
+        <div style="display: none" id="apertio">
+            <p>
+                1 result found
+            </p>
+            <br>
+            <audio id="static"><source src="img/static.mp3" type="audio/mp3"></audio>
+            <img height="50" id="speaker" src="img/Speaker_Icon.svg" alt="speaker icon" onclick="playAudio()"/>
+        </div>
         <script src="database.js"></script>
+        <script src="login.js"></script>
     </div>
 </body>

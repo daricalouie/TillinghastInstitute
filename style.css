@@ -206,3 +206,8 @@ button:hover {
 #hdr-img{
   width: 35%;
 }
+
+video{
+  margin: 10px auto;
+  display: block;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- head definitions go here -->
+    <meta charset='utf-8'>
+    <title>Tillinghast Organization</title>
+    <link rel='stylesheet' , href='style.css'>
+
+</head>
+
+<body>
+    <!-- the content goes here -->
+    <a href="index.html"><img id="hdr-img" src="img/tillinghast-horizontal.jpg"
+            alt="Tillinghast Organization logo" /></a>
+    <div class='navbar blur'>
+        <a href="#">Home</a>
+        <span class="menu"><a href="about.html">About</a></span>
+        <span class="menu"><a href="database.html">Database</a></span>
+        <span class="menu"><a href="security.html">Security</a></span>
+        <div class='navright'>
+            <span></span>
+        </div>
+    </div>
+    <div class="inner-content">
+        <p>
+            Security Camera T56-8920 </br>
+            Location: 259 N Pass Ave
+        </p>
+        <button id="vidBtn" style="width: 100px" onclick="activate()">Activate</button>
+        <video id="video1" height="400px" style="display: none">
+            <source src="img/security-stock.mov" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+    </div>
+    <script>
+        const vid = document.getElementById("video1");
+        const btn = document.getElementById("vidBtn");
+        function activate(){
+            vid.style.display = "block";
+            vid.play();
+            btn.style.display = "none";
+        }        
+    </script>
+    <script src="login.js"></script>
+
+</body>

@@ -5,6 +5,7 @@
     <!-- head definitions go here -->
     <meta charset='utf-8'>
     <link rel='stylesheet' , href='style.css'>
+    <title>Tillinghast Organization</title>
 
 </head>
 
@@ -19,6 +20,21 @@
             <span></span>
         </div>
     </div>
+    <div id="id01" class="modal" style="display: block">
+        <form class="modal-content animate" id="login-form" method="post">
+            <div class="container">
+                <label for="username"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="username" required>
+
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required>
+
+                <button type="submit" id="login-form-submit">Login</button>
+                <p id="login-error-msg">Invalid username and/or password</p>
+                <p id="forgot-password">If you have forgotten your password, please contact the IT department.</p>
+            </div>
+        </form>
+    </div>
     <div class="search-container">
         <h1>Search the Tillinghast Security Cameras</h1>
         <form id="search-bar" method="post">
@@ -28,8 +44,9 @@
             </div>
         </form>
         <div id="results-window">
-            <p id="search-results"></p>
+            
         </div>
         <script src="security.js"></script>
+        <script src="login.js"></script>
     </div>
 </body>

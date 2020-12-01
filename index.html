@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- head definitions go here -->
-        <meta charset='utf-8'>
-        <link rel='stylesheet', href='style.css'>
 
-    </head>
-    <body>
-        <!-- the content goes here -->
-        <a href="index.html"><img id="hdr-img" src="img/tillinghast-horizontal.jpg" alt="Tillinghast Organization logo"/></a>
-        <div class='navbar blur'>
-            <a href="#">Home</a>
-            <span class="menu"><a href="about.html">About</a></span>
-            <span class="menu"><a href="database.html">Database</a></span>
-            <span class="menu"><a href="security.html">Security</a></span>
-            <div class='navright'>
-                <span></span>
-            </div>
+<head>
+    <!-- head definitions go here -->
+    <meta charset='utf-8'>
+    <title>Tillinghast Organization</title>
+    <link rel='stylesheet' , href='style.css'>
+
+</head>
+
+<body>
+    <!-- the content goes here -->
+    <a href="index.html"><img id="hdr-img" src="img/tillinghast-horizontal.jpg"
+            alt="Tillinghast Organization logo" /></a>
+    <div class='navbar blur'>
+        <a href="#">Home</a>
+        <span class="menu"><a href="about.html">About</a></span>
+        <span class="menu"><a href="database.html">Database</a></span>
+        <span class="menu"><a href="security.html">Security</a></span>
+        <div class='navright'>
+            <span></span>
         </div>
-        <div id="id01" class="modal" style="display: block">
-  
-            <form class="modal-content animate" id="login-form" method="post">
-          
-              <div class="container">
+    </div>
+    <div id="id01" class="modal" style="display: block">
+        <form class="modal-content animate" id="login-form" method="post">
+
+            <div class="container">
                 <label for="username"><b>Email</b></label>
                 <input type="text" placeholder="Enter Email" name="username" required>
-          
+
                 <label for="password"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="password" required>
-                  
+
                 <button type="submit" id="login-form-submit">Login</button>
                 <p id="login-error-msg">Invalid username and/or password</p>
                 <p id="forgot-password">If you have forgotten your password, please contact the IT department.</p>
-              </div>
-            </form>
-          </div>
-        <div class="container-fluid">
-            <div class="inner-content">
+            </div>
+        </form>
+    </div>
+    <div class="container-fluid">
+        <div class="inner-content">
             </br>
             </br>
         </div>
-        <script src="index.js"></script>
-    </body>
+        <script src="login.js"></script>
+</body>
+
 </html>
