@@ -8,8 +8,8 @@ const forgottenPassword = document.getElementById("forgot-password");
 
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
-    const username = loginForm.username.value.trim();
-    const password = loginForm.password.value;
+    const username = loginForm.username.value.trim().toLowerCase();
+    const password = loginForm.password.value.toLowerCase();
 
     if (username === "bruce@tillinghastorganization.com" && password === "pineapple") {
         // alert("You have successfully logged in.");

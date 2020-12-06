@@ -34,10 +34,6 @@ function searchHandler() {
 
 }
 
-function playAudio(){
-    document.getElementById("static").play();
-}
-
 searchButton.addEventListener("click", (e) => {
     console.log("search button pressed");
     searchHandler();
