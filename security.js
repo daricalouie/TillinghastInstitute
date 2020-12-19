@@ -16,7 +16,6 @@ function searchHandler(){
             <br>\
             Location: 259 N Pass Ave\
             </p>";
-        vidBtn = document.getElementById("vid-btn");
 
     }else{
         resultsWindow.innerHTML = "<p>No results found for \"" + s + "\". Please refine your search.</p>";

@@ -12,6 +12,7 @@ function searchHandler() {
     s = searchbar.search.value.trim();
     searchterm = s.toLowerCase().replace(/\s/g, '');
     if (searchterm == "numerology") {
+        apertio.style.display = "none";
         results.innerHTML = "1 result found for \"numerology\"<br><br>\
         Numerology number meanings:<br>\
         1: The goal-driven, independent and innovative.<br>\
@@ -26,6 +27,7 @@ function searchHandler() {
     } else if (searchterm == "apertio") {
         apertio.style.display = "block";
     } else {
+        apertio.style.display = "none";
         results.innerHTML = "No results found for \"" + s + "\". Please refine your search.";
     }
     resultsWindow.style.padding = "20px 18px";
