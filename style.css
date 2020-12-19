@@ -49,10 +49,11 @@
     padding: 10px;
   }
   .left{
-    width: 40%;
+    width: 50%;
+    padding:5%;
   }
   .right{
-    width: 60%;
+    width: 50%;
   }
 	
 	.letter {
@@ -215,4 +216,14 @@ video{
 .result-div{
   border-bottom: solid 1px black;
   padding: 35px 5px;
+}
+
+.vid-container{
+  margin: 0px auto;
+  display: block;
+}
+
+#vidBtn{
+  background-color: #a80000;
+  width: 100px;
 }
