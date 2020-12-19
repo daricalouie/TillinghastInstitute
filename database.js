@@ -26,6 +26,7 @@ function searchHandler() {
         9. Awakening, enlightened and healing.<br>"
     } else if (searchterm == "apertio") {
         apertio.style.display = "block";
+        results.innerHTML = "";
     } else {
         apertio.style.display = "none";
         results.innerHTML = "No results found for \"" + s + "\". Please refine your search.";

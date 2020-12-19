@@ -20,6 +20,8 @@ loginButton.addEventListener("click", (e) => {
         time += 3600 * 1000;
         now.setTime(time);
         document.cookie="username=bruce; expires="+now.toUTCString()+";";
+        document.getElementById('page-content').style.display ='block';
+
     } else {
         loginErrorMsg.style.opacity = 1;
         loginAttempts++;
@@ -51,6 +53,7 @@ function checkLoggedIn() {
     console.log(username);
     if (username == "bruce") {
         document.getElementById('id01').style.display = 'none';
+        document.getElementById('page-content').style.display ='block';
     }
     else{
         document.getElementById('id01').style.display = 'block';
