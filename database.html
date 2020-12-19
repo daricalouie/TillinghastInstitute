@@ -10,30 +10,14 @@
 </head>
 
 <body>
-    <a href="index.html"><img id="hdr-img" src="img/tillinghast-horizontal.jpg" alt="Tillinghast Organization logo"/></a>
+    <a href="index.html"><img id="hdr-img" src="img/tillinghast-logo.png" alt="Tillinghast Organization logo"/></a>
     <div class='navbar blur'>
         <a href="index.html">Home</a>
         <span class="menu"><a href="about.html">About</a></span>
-        <span class="menu"><a href="database.html">Database</a></span>
         <span class="menu"><a href="security.html">Security</a></span>
         <div class='navright'>
             <span></span>
         </div>
-    </div>
-    <div id="id01" class="modal" style="display: none">
-        <form class="modal-content animate" id="login-form" method="post">
-            <div class="container">
-                <label for="username"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="username" required>
-
-                <label for="password"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="password" required>
-
-                <button type="submit" id="login-form-submit">Login</button>
-                <p id="login-error-msg">Invalid username and/or password</p>
-                <p id="forgot-password">If you have forgotten your password, please contact the IT department.</p>
-            </div>
-        </form>
     </div>
     <div class="search-container">
         <h1>Search the Tillinghast Database</h1>
@@ -41,6 +25,8 @@
             <div>
                 <input type="text" placeholder="Search by Keyword..." name="search">
                 <button type="button" id="search-submit">Search</button>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yw2zGxOH-EY?controls=0;showinfo=0;autoplay=1;rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </form>
         <div id="results-window">
@@ -48,12 +34,18 @@
         </div>
         <div style="display: none" id="apertio">
             <p>
-                1 result found
+                2 results found
             </p>
             <br>
-            <audio controls id="static"><source src="img/static.mp3" type="audio/mp3"></audio>
+            <div class="result-div">
+                <audio controls id="static"><source src="img/7A.mp3" type="audio/mp3"></audio>
+                <br>
+            </div>
+            <div class="result-div">
+                <img src="img/BottleImages_v2.gif" height="400px" alt="Gif of Bottle Outlines"/>
+            </div>
         </div>
         <script src="database.js"></script>
-        <script src="login.js"></script>
+        <!--script src="login.js"></script!-->
     </div>
 </body>

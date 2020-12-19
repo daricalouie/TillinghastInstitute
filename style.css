@@ -211,3 +211,8 @@ video{
   margin: 10px auto;
   display: block;
 }
+
+.result-div{
+  border-bottom: solid 1px black;
+  padding: 35px 5px;
+}
