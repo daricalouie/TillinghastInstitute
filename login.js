@@ -11,7 +11,7 @@ loginButton.addEventListener("click", (e) => {
     const username = loginForm.username.value.trim().toLowerCase();
     const password = loginForm.password.value.toLowerCase();
 
-    if (username === "bruce@tillinghastorganization.com" && password === "pineapple") {
+    if (username === atob("YnJ1Y2VAdGlsbGluZ2hhc3Rvcmdhbml6YXRpb24uY29t") && password === atob("cGluZWFwcGxl")) {
         // alert("You have successfully logged in.");
         document.getElementById('id01').style.display = 'none';
         loggedIn = true;

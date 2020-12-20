@@ -23,24 +23,25 @@
             Security Camera T56-8920 </br>
             Location: 259 N Pass Ave
         </p>
-            <img class="vid-container" id="inactive" height="400px" src="img/Inactive.png" alt="Tillinghast Organization logo"/>
-            <br>
-            <button class="vid-container" id="vidBtn" onclick="activate()">Activate</button>
-            <video id="video1" height="400px" style="display: none">
-                <source src="img/RogueTavernCCTV_Final.mp4" type="video/mp4">
-                Your browser does not support HTML video.
-            </video>
-    </div>
-    <script>
+        <img class="vid-container" id="inactive" height="400px" src="img/Inactive.png" alt="Tillinghast Organization logo" />
+        <br>
+        <button class="vid-container" id="vidBtn" onclick="activate()">Activate</button>
+        <video id="video1" height="400px" style="display: none">
+            <source src="img/Inactive.png" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+        </div>
+        <script>
         const vid = document.getElementById("video1");
         const btn = document.getElementById("vidBtn");
         const inactive = document.getElementById("inactive");
+        const t = document.getElementById("test");
         function activate(){
             vid.style.display = "block";
+            vid.src = atob("aW1nL1JvZ3VlVGF2ZXJuQ0NUVl9GaW5hbC5tcDQ=");
             vid.play();
             btn.style.display = "none";
             inactive.style.display = "none";
         }        
     </script>
-
 </body>
