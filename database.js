@@ -19,7 +19,7 @@ function searchHandler() {
         important.style.display = "block";
         results.innerHTML = "";
         aud.src = atob("aW1nLzdBLm1wMw==");
-        gif.src = atob("aW1nL0JvdHRsZUltYWdlc192Mi5naWY=")
+        gif.src = atob("aW1nL0JvdHRsZUltYWdlc192Mi5naWY=");
     } else {
         important.style.display = "none";
         results.innerHTML = "No results found for \"" + s + "\". Please refine your search.";
